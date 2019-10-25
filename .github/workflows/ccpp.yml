@@ -10,4 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: build
-      run: D:\a\c-plus-plus-nuget-sample\c-plus-plus-nuget-sample\build.bat
+      run: dir C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
+    - name: build2
+      run: dir C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7
+    - name: build3
+      run: dir C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE
