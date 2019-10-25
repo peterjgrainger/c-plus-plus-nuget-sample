@@ -11,5 +11,4 @@ jobs:
     - uses: actions/checkout@v1
     - name: compile
       run: |
-        ls Project1.sln
-        "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.com" Project1.sln /Build Release /Project Project
+        "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.com" Project1.sln /build Release /project test
