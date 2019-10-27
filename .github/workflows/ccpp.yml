@@ -9,8 +9,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - uses: olegtarasov/download-nuget@v
+    - uses: olegtarasov/download-nuget@v1
     - name: compile
       run: D:\a\c-plus-plus-nuget-sample\c-plus-plus-nuget-sample\run.bat
-    - name: ls
-      run: ls
+    - name: pack
+      run: nuget pack package
