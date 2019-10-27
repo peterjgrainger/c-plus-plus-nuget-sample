@@ -11,3 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: compile
       run: D:\a\c-plus-plus-nuget-sample\c-plus-plus-nuget-sample\run.bat
+    - name: ls
+      run: ls
