@@ -9,10 +9,5 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: dir
-      run: dir
-    - name: ls
-      run: ls
     - name: compile
-      run: |
-        run.bat
+      run: D:\a\c-plus-plus-nuget-sample\c-plus-plus-nuget-sample\build.bat
