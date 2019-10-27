@@ -15,4 +15,4 @@ jobs:
       run: ls
     - name: compile
       run: |
-        "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv.com" "d:\a\c-plus-plus-nuget-sample\c-plus-plus-nuget-sample/Project1.sln" /build Release /project "d:\a\c-plus-plus-nuget-sample\c-plus-plus-nuget-sample/Project1.vcxproj"
+        run.bat
