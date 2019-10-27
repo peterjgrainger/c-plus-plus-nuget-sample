@@ -12,4 +12,5 @@ copy x64\Debug\Project1.pdb package\build\native\lib\static\v141\x64\Debug
 
 copy x64\Release\Project1.lib package\build\native\lib\static\v141\x64\Release
 
+copy Project1.nuspec package
 
