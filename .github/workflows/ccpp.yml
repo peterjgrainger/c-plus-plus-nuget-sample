@@ -18,8 +18,8 @@ jobs:
       run: nuget pack package
       shell: cmd
     - name: Add private GitHub registry to NuGet
-      run: nuget sources add -name "GPR" -Source https://nuget.pkg.github.com/peterjgrainger/index.json -Username peterjgrainger -Password ${{ secrets.GITHUB_TOKEN }}
+      run: nuget sources add -name "GitHub" -Source https://nuget.pkg.github.com/peterjgrainger/index.json -Username peterjgrainger -Password ${{ secrets.GITHUB_TOKEN }}
     - name: add api key
-      run: nuget setapikey ${{ secrets.GITHUB_TOKEN }} -Source "GPR" 
+      run: nuget setapikey ${{ secrets.GITHUB_TOKEN }} -Source "GitHub" 
     - name: Push generated package to GitHub registry
-      run: nuget push *.nupkg -Source "GPR" -SkipDuplicate
+      run: nuget push *.nupkg -Source "GitHub" -SkipDuplicate
