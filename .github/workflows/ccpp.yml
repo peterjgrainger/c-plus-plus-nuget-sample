@@ -12,10 +12,10 @@ jobs:
     - uses: olegtarasov/download-nuget@v1
     - name: compile
       run: run.bat
-      working-directory: D:\a\c-plus-plus-nuget-sample\c-plus-plus-nuget-sample
+      working-directory: $GITHUB_WORKSPACE
       shell: cmd
     - name: pack
-      run: nuget pack package
+      run: nuget pack package -Version $GITHUB_REF 
       shell: cmd
     - name: Add private GitHub registry to NuGet
       run: nuget sources add -name "GitHub" -Source https://nuget.pkg.github.com/peterjgrainger/index.json -Username peterjgrainger -Password ${{ secrets.GITHUB_TOKEN }}
