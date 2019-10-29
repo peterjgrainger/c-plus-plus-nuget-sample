@@ -28,7 +28,7 @@ int main()
         if (!AfxWinInit(hModule, nullptr, ::GetCommandLine(), 0))
         {
             // TODO: code your application's behavior here.
-            wprintf(L"Fatal Error: MFC initialization failed\n");
+            wprin(L"Fatal Error: MFC initialization failed\n");
             nRetCode = 1;
         }
         else
