@@ -20,7 +20,7 @@ jobs:
         copy x64\Debug\Project1.pdb package\build\native\lib\static\v141\x64\Debug
         copy x64\Release\Project1.lib package\build\native\lib\static\v141\x64\Release
         copy c-plus-plus-nuget-sample.nuspec package
-      shell: cmd
+      shell: powershell
     - name: pack
       run: nuget pack package
       shell: cmd
